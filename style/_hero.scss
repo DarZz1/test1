@@ -1,0 +1,313 @@
+.hero {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 83px;
+
+    margin-top: -100px;
+
+    @media (max-width: 767px) {
+        padding-top: 108px;
+        padding-bottom: 138px;
+        margin-top: -78px;
+    }
+
+    &__image {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__inner {
+        overflow: hidden;
+    }
+
+    &__inner-header {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 114px;
+        text-align: center;
+
+        margin-bottom: 48px;
+
+        @media (max-width: 1199px) {
+            font-size: 60px;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 48px;
+
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 35px;
+            line-height: 44px;
+        }
+    }   
+
+    &__content-item {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        background: #FFFFFF4D;
+        border: #FFFFFF solid 3px;
+        box-shadow: 0px 4px 15px 0px #FFFFFF59;
+        border-radius: 35px 0 35px;
+        backdrop-filter: blur(15px);
+
+        padding: 14px 15px;
+
+        @media (max-width: 1199px) {
+            gap: 5px;
+            border-radius: 25px 0 25px;
+
+            padding: 15px 5px;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 22px;
+            max-width: 254px;
+            border-radius: 35px 0 35px;
+
+            padding: 44px 18px;
+        }
+    }
+
+    &__item-svg {
+        position: absolute;
+        top: -10px;
+        right: -15px;
+
+        @media (max-width: 767px) {
+            top: -15px;
+            right: -20px;
+        }
+    }
+
+    &__item-num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 51px;
+        width: 51px;
+
+        border-radius: 50%;
+        background: #5E7600;
+        border: #FFFFFF solid 1px;
+
+        @media (max-width: 1199px) {
+            height: 40px;
+            width: 40px;
+        }
+
+        @media (max-width: 767px) {
+            height: 73px;
+            width: 74px;
+        }
+    }
+
+    &__inner-content {
+        position: relative;
+
+        height: 462px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__content-item-item {
+        max-width: 24.138%;
+
+        @media (max-width: 991px) {
+            max-width: 32%;
+        }
+
+        &:nth-child(1) {
+            &::after {
+                content: url(./../image/DottedLine-min.svg);
+                position: absolute;
+                top: 75px;
+                left: 60px;
+                z-index: -1;
+            }
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 246px;
+            left: 77px;
+
+            @media (max-width: 991px) {
+                top: 195px;
+                left: 16px;
+            }
+
+            &::after {
+                content: url(./../image/DottedLine-min1.svg);
+                position: absolute;
+                bottom: -110px;
+                right: -70px;
+                z-index: -1;
+            }
+        }
+
+        &:nth-child(3) {
+            position: absolute;
+            bottom: 30px;
+            left: 427px;
+
+            @media (max-width: 1199px) {
+                bottom: 40px;
+                left: 350px;
+            }
+
+            @media (max-width: 991px) {
+                bottom: 70px;
+                left: 185px;
+            }
+
+            &::after {
+                content: url(./../image/DottedLine-min2.svg);
+                position: absolute;
+                top: -147px;
+                left: 48px;
+                z-index: -1;
+            }
+        }
+
+        &:nth-child(4) {
+            position: absolute;
+            top: 113px;
+            left: 355px;
+
+            @media (max-width: 991px) {
+                top: 85px;
+                left: 235px;
+            }
+
+            &::after {
+                content: url(./../image/DottedLine-min3.svg);
+                position: absolute;
+                top: -65px;
+                right: -250px;
+                z-index: -1;
+            }
+        }
+
+        &:nth-child(5) {
+            position: absolute;
+            top: 41px;
+            right: 0;
+
+            @media (max-width: 991px) {
+                top: 5px;
+                right: 0;   
+            }
+
+            &::after {
+                content: url(./../image/DottedLine-min4.svg);
+                position: absolute;
+                bottom: -125px;
+                right: 10px;
+                z-index: -1;
+            }
+        }
+
+        &:nth-child(6) {
+            position: absolute;
+            top: 197px;
+            right: 139px;
+
+            @media (max-width: 991px) {
+                top: 155px;
+                right: 25px;  
+            }
+        }
+    }
+
+    &__item-text {
+        flex: 1;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F6FFD2;
+
+        @media (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
+    }
+
+
+    //slider
+
+    .wrapper {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: block ;
+        }
+    }
+
+    &__slider-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-track {
+        display: flex;
+        gap: 10px;
+        transition: .4s;
+
+        margin-bottom: 15px;
+    }
+
+    .slider-button {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        .btn-prev {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            font-size: 14px;
+            line-height: 18px;
+            color: #F6FFD2;
+
+            &:disabled {
+                opacity: .5;
+            }
+        }
+
+        .btn-next {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            font-size: 14px;
+            line-height: 18px;
+            color: #F6FFD2;
+
+            &:disabled {
+                opacity: .5;
+            }
+        }
+    }
+}

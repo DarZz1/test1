@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Actay';
+    font-weight: 400;
+    src: url('./../fonts/Actay-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Actay';
+    font-weight: 700;
+    src: url('./../fonts/ActayWide-Bold.woff2');
+}
+
+body {
+    font-family: 'Actay', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
